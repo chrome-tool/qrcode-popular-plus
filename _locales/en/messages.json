@@ -1,0 +1,223 @@
+{
+  "extName": {
+    "message": "QR Sweep Pro"
+  },
+  "extDescription": {
+    "message": "Batch extract and scan QR codes from image, camera, and current page. Fully offline decoding."
+  },
+  "heroSubtitle": {
+    "message": "Scan from image, camera, or extract all QR codes on this page."
+  },
+  "settingsTitle": {
+    "message": "Appearance"
+  },
+  "settingsLayoutLabel": {
+    "message": "UI"
+  },
+  "settingsDarkModeLabel": {
+    "message": "Dark Mode"
+  },
+  "layoutComfortable": {
+    "message": "Comfortable"
+  },
+  "layoutCompact": {
+    "message": "Compact"
+  },
+  "darkModeLight": {
+    "message": "Light"
+  },
+  "darkModeDark": {
+    "message": "Dark"
+  },
+  "darkModeAuto": {
+    "message": "Auto"
+  },
+  "scanImage": {
+    "message": "Scan Image"
+  },
+  "scanCamera": {
+    "message": "Open Camera"
+  },
+  "scanPage": {
+    "message": "Sweep Page"
+  },
+  "stopCamera": {
+    "message": "Stop Camera"
+  },
+  "clearHistory": {
+    "message": "Clear History"
+  },
+  "exportHistory": {
+    "message": "Export JSON"
+  },
+  "selectedImagePreviewAlt": {
+    "message": "Selected image preview"
+  },
+  "makeQrTitle": {
+    "message": "Make QR"
+  },
+  "makeQrSubtitle": {
+    "message": "Online Builder"
+  },
+  "makeInputPlaceholder": {
+    "message": "Enter text or URL to generate QR"
+  },
+  "makeGenerate": {
+    "message": "Generate"
+  },
+  "makeDownload": {
+    "message": "Download PNG"
+  },
+  "generatedQrPreviewAlt": {
+    "message": "Generated QR preview"
+  },
+  "resultsTitle": {
+    "message": "Results"
+  },
+  "copyAction": {
+    "message": "Copy"
+  },
+  "openAction": {
+    "message": "Open"
+  },
+  "statusUnexpectedStartupError": {
+    "message": "Unexpected error during startup."
+  },
+  "statusNoCameraFound": {
+    "message": "No camera found. You can still scan from image and page sweep."
+  },
+  "statusHistoryLoaded": {
+    "message": "History loaded."
+  },
+  "statusReady": {
+    "message": "Ready. Pick an input to start scanning."
+  },
+  "statusScanningImage": {
+    "message": "Scanning image..."
+  },
+  "statusImageScanned": {
+    "message": "Image scanned successfully."
+  },
+  "statusNoQrInImage": {
+    "message": "No QR code detected in image."
+  },
+  "statusStartingCamera": {
+    "message": "Starting camera scanner..."
+  },
+  "statusCameraDetectedQr": {
+    "message": "Camera detected a QR code."
+  },
+  "statusCameraActive": {
+    "message": "Camera scanning is active."
+  },
+  "statusCameraUnavailable": {
+    "message": "Camera permission denied or unavailable."
+  },
+  "statusCameraOpenedInTab": {
+    "message": "Opened camera scanner in a new tab."
+  },
+  "statusCameraStopped": {
+    "message": "Camera scanning stopped."
+  },
+  "statusCollectingPageCandidates": {
+    "message": "Collecting QR candidates from current page..."
+  },
+  "statusNoActiveTab": {
+    "message": "Could not identify active tab."
+  },
+  "statusSweepingCanvases": {
+    "message": "Sweeping canvases..."
+  },
+  "statusSweepingImages": {
+    "message": "Sweeping images..."
+  },
+  "statusSweepingScreenshot": {
+    "message": "Sweeping tab screenshot..."
+  },
+  "statusSweepNoResults": {
+    "message": "Sweep finished. No QR code found on this page."
+  },
+  "statusSweepFoundResults": {
+    "message": "Sweep finished. Found $COUNT$ unique QR value(s).",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceImage": {
+    "message": "image"
+  },
+  "sourceCamera": {
+    "message": "camera"
+  },
+  "sourcePageCanvas": {
+    "message": "page canvas"
+  },
+  "sourcePageImage": {
+    "message": "page image"
+  },
+  "sourceTabScreenshot": {
+    "message": "tab screenshot"
+  },
+  "sourceMakeQr": {
+    "message": "QR builder"
+  },
+  "sourceUnknown": {
+    "message": "unknown"
+  },
+  "statusCopied": {
+    "message": "Copied to clipboard."
+  },
+  "statusCopyFailed": {
+    "message": "Could not copy to clipboard."
+  },
+  "statusResultNotUrl": {
+    "message": "Current result is not a URL."
+  },
+  "statusOpenedResult": {
+    "message": "Opened result in new tab."
+  },
+  "statusHistoryCleared": {
+    "message": "History cleared."
+  },
+  "statusHistoryExported": {
+    "message": "History exported as JSON."
+  },
+  "statusEnterTextBeforeGenerating": {
+    "message": "Enter text or URL before generating."
+  },
+  "statusQrGenerated": {
+    "message": "QR generated. You can download it now."
+  },
+  "statusNoGeneratedQr": {
+    "message": "No generated QR to download."
+  },
+  "statusGeneratedQrDownloaded": {
+    "message": "Generated QR downloaded."
+  },
+  "statusOpenedGeneratedQrManualSave": {
+    "message": "Opened generated QR in a new tab for manual save."
+  },
+  "cameraPageTitle": {
+    "message": "Camera Scanner"
+  },
+  "cameraPageSubtitle": {
+    "message": "Runs in a dedicated extension page for more reliable camera permissions."
+  },
+  "cameraPageLatestResultTitle": {
+    "message": "Latest Result"
+  },
+  "cameraPageLatestResultEmpty": {
+    "message": "No QR code detected yet."
+  },
+  "cameraPageHistoryHint": {
+    "message": "Detected values are automatically saved to panel history."
+  },
+  "cameraPageStop": {
+    "message": "Stop Camera"
+  },
+  "moreExtensionsLabel": {
+    "message": "More Extensions"
+  }
+}

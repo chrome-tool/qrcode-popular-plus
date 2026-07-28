@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="cameraPageTitle">Camera Scanner</title>
+    <link rel="stylesheet" href="src/panel.css" />
+  </head>
+  <body class="camera-page">
+    <main class="app">
+      <header class="hero">
+        <h1 data-i18n="cameraPageTitle">Camera Scanner</h1>
+        <p data-i18n="cameraPageSubtitle">Runs in a dedicated extension page for more reliable camera permissions.</p>
+      </header>
+
+      <section class="preview">
+        <video id="camera" playsinline muted></video>
+        <p id="status" data-i18n="statusStartingCamera">Starting camera scanner...</p>
+      </section>
+
+      <section class="controls secondary">
+        <button id="stop-camera" class="ghost" data-i18n="cameraPageStop">Stop Camera</button>
+        <button id="copy-result" class="ghost" data-i18n="copyAction" disabled>Copy</button>
+        <button id="open-result" class="accent" data-i18n="openAction" disabled>Open</button>
+      </section>
+
+      <section>
+        <div class="title-row">
+          <h2 data-i18n="cameraPageLatestResultTitle">Latest Result</h2>
+        </div>
+        <div class="result-item">
+          <div class="meta" id="result-meta"></div>
+          <a class="value" id="result-value" data-i18n="cameraPageLatestResultEmpty" href="javascript:void(0)">No QR code detected yet.</a>
+        </div>
+        <p id="history-hint" data-i18n="cameraPageHistoryHint">Detected values are automatically saved to panel history.</p>
+      </section>
+    </main>
+
+    <script type="module" src="src/camera.js"></script>
+  </body>
+</html>

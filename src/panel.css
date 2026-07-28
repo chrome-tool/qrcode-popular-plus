@@ -1,0 +1,383 @@
+:root {
+  --bg: #f6f8fb;
+  --panel: #ffffff;
+  --ink: #162337;
+  --muted: #5d6b80;
+  --line: #d5dce7;
+  --accent: #0969da;
+  --accent-strong: #0550ae;
+  --good: #137333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 0% 0%, #dbe9ff 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, #ffe6d0 0%, transparent 45%),
+    var(--bg);
+  color: var(--ink);
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body.mode-dark {
+  --bg: #13171e;
+  --panel: #1b2330;
+  --ink: #eaf2ff;
+  --muted: #a4b3ca;
+  --line: #30425b;
+  --accent: #5ea1ff;
+  --accent-strong: #3e84ea;
+  --good: #56d48c;
+
+  background:
+    radial-gradient(circle at 0% 0%, #1c2d4b 0%, transparent 42%),
+    radial-gradient(circle at 100% 100%, #3a2b1f 0%, transparent 46%),
+    var(--bg);
+}
+
+body.camera-page {
+  width: min(100%, 560px);
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.app {
+  padding: 14px;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+body.ui-compact .app {
+  padding: 8px;
+}
+
+body.ui-compact .hero h1 {
+  font-size: 18px;
+}
+
+body.ui-compact .hero p {
+  margin: 4px 0 8px;
+  font-size: 12px;
+}
+
+body.ui-compact button {
+  padding: 6px 8px;
+  font-weight: 500;
+}
+
+body.ui-compact .result-item {
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+body.ui-compact .controls,
+body.ui-compact .controls.secondary,
+body.ui-compact .appearance-grid,
+body.ui-compact .maker-controls {
+  grid-template-columns: 1fr;
+}
+
+body.ui-compact #results {
+  max-height: 180px;
+}
+
+body.ui-comfortable .controls {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.hero p {
+  margin: 6px 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.appearance {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--panel);
+  margin-bottom: 8px;
+}
+
+.appearance .title-row h2 {
+  margin-top: 0;
+}
+
+.appearance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.appearance-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.appearance-field select {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.controls.secondary {
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 9px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+button.accent:hover {
+  background: var(--accent-strong);
+}
+
+button.ghost {
+  background: transparent;
+}
+
+.preview {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--panel);
+  margin: 10px 0;
+}
+
+.maker {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px;
+  background: var(--panel);
+  margin-bottom: 10px;
+}
+
+.maker-title h2 {
+  margin: 0 0 8px;
+}
+
+.maker-title span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+#make-input {
+  width: 100%;
+  resize: vertical;
+  min-height: 68px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  font: inherit;
+  margin-bottom: 8px;
+}
+
+.maker-controls {
+  display: grid;
+  grid-template-columns: minmax(90px, 120px) 1fr 1fr;
+  gap: 8px;
+}
+
+#make-size {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  background: var(--panel);
+}
+
+.make-preview-wrap {
+  margin-top: 8px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+  background: #f9fbff;
+}
+
+#make-preview {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+#camera,
+.preview .image {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #edf2f9;
+}
+
+#camera {
+  object-fit: contain;
+}
+
+body.camera-page #camera {
+  height: 320px;
+  object-fit: cover;
+}
+
+.preview .image {
+  object-fit: contain;
+  object-position: center;
+}
+
+#status {
+  margin: 8px 2px 2px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.title-row h2 {
+  margin: 2px 0 8px;
+  font-size: 15px;
+}
+
+#result-count {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+#results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.result-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: var(--panel);
+}
+
+.result-item .meta {
+  font-size: 11px;
+  color: var(--good);
+  margin-bottom: 4px;
+}
+
+.result-item .value {
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  word-break: break-all;
+  margin-bottom: 8px;
+}
+
+.result-item .actions {
+  display: flex;
+  gap: 8px;
+}
+
+.result-item .actions button {
+  font-size: 11px;
+  padding: 5px 8px;
+}
+
+.related-links {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.related-links a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.related-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .controls,
+  .controls.secondary,
+  .maker-controls,
+  .appearance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .appearance-grid {
+    grid-template-columns: 1fr;
+  }
+}

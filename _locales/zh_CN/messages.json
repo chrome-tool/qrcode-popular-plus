@@ -1,0 +1,223 @@
+{
+  "extName": {
+    "message": "QR Sweep Pro"
+  },
+  "extDescription": {
+    "message": "批量提取并扫描图片、摄像头和当前页面中的二维码，完全离线解码。"
+  },
+  "heroSubtitle": {
+    "message": "支持从图片、摄像头扫描，或提取当前页面中的全部二维码。"
+  },
+  "settingsTitle": {
+    "message": "外观"
+  },
+  "settingsLayoutLabel": {
+    "message": "界面"
+  },
+  "settingsDarkModeLabel": {
+    "message": "深色模式"
+  },
+  "layoutComfortable": {
+    "message": "舒适"
+  },
+  "layoutCompact": {
+    "message": "紧凑"
+  },
+  "darkModeLight": {
+    "message": "浅色"
+  },
+  "darkModeDark": {
+    "message": "深色"
+  },
+  "darkModeAuto": {
+    "message": "自动"
+  },
+  "scanImage": {
+    "message": "扫描图片"
+  },
+  "scanCamera": {
+    "message": "打开摄像头"
+  },
+  "scanPage": {
+    "message": "扫描页面"
+  },
+  "stopCamera": {
+    "message": "停止摄像头"
+  },
+  "clearHistory": {
+    "message": "清空历史"
+  },
+  "exportHistory": {
+    "message": "导出 JSON"
+  },
+  "selectedImagePreviewAlt": {
+    "message": "已选择图片预览"
+  },
+  "makeQrTitle": {
+    "message": "生成二维码"
+  },
+  "makeQrSubtitle": {
+    "message": "在线生成"
+  },
+  "makeInputPlaceholder": {
+    "message": "输入文本或 URL 以生成二维码"
+  },
+  "makeGenerate": {
+    "message": "生成"
+  },
+  "makeDownload": {
+    "message": "下载 PNG"
+  },
+  "generatedQrPreviewAlt": {
+    "message": "已生成二维码预览"
+  },
+  "resultsTitle": {
+    "message": "结果"
+  },
+  "copyAction": {
+    "message": "复制"
+  },
+  "openAction": {
+    "message": "打开"
+  },
+  "statusUnexpectedStartupError": {
+    "message": "启动时发生意外错误。"
+  },
+  "statusNoCameraFound": {
+    "message": "未找到摄像头。你仍然可以扫描图片和页面。"
+  },
+  "statusHistoryLoaded": {
+    "message": "历史记录已加载。"
+  },
+  "statusReady": {
+    "message": "准备就绪，请选择一种输入方式开始扫描。"
+  },
+  "statusScanningImage": {
+    "message": "正在扫描图片..."
+  },
+  "statusImageScanned": {
+    "message": "图片扫描成功。"
+  },
+  "statusNoQrInImage": {
+    "message": "图片中未检测到二维码。"
+  },
+  "statusStartingCamera": {
+    "message": "正在启动摄像头扫描..."
+  },
+  "statusCameraDetectedQr": {
+    "message": "摄像头检测到了二维码。"
+  },
+  "statusCameraActive": {
+    "message": "摄像头扫描已启动。"
+  },
+  "statusCameraUnavailable": {
+    "message": "摄像头权限被拒绝或不可用。"
+  },
+  "statusCameraOpenedInTab": {
+    "message": "已在新标签页中打开摄像头扫描器。"
+  },
+  "statusCameraStopped": {
+    "message": "摄像头扫描已停止。"
+  },
+  "statusCollectingPageCandidates": {
+    "message": "正在收集当前页面中的二维码候选内容..."
+  },
+  "statusNoActiveTab": {
+    "message": "无法识别当前活动标签页。"
+  },
+  "statusSweepingCanvases": {
+    "message": "正在扫描页面 canvas..."
+  },
+  "statusSweepingImages": {
+    "message": "正在扫描页面图片..."
+  },
+  "statusSweepingScreenshot": {
+    "message": "正在扫描标签页截图..."
+  },
+  "statusSweepNoResults": {
+    "message": "页面扫描完成，未发现二维码。"
+  },
+  "statusSweepFoundResults": {
+    "message": "页面扫描完成，发现 $COUNT$ 个不重复的二维码结果。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "sourceImage": {
+    "message": "图片"
+  },
+  "sourceCamera": {
+    "message": "摄像头"
+  },
+  "sourcePageCanvas": {
+    "message": "页面 canvas"
+  },
+  "sourcePageImage": {
+    "message": "页面图片"
+  },
+  "sourceTabScreenshot": {
+    "message": "标签页截图"
+  },
+  "sourceMakeQr": {
+    "message": "二维码生成"
+  },
+  "sourceUnknown": {
+    "message": "未知来源"
+  },
+  "statusCopied": {
+    "message": "已复制到剪贴板。"
+  },
+  "statusCopyFailed": {
+    "message": "无法复制到剪贴板。"
+  },
+  "statusResultNotUrl": {
+    "message": "当前结果不是 URL。"
+  },
+  "statusOpenedResult": {
+    "message": "已在新标签页中打开结果。"
+  },
+  "statusHistoryCleared": {
+    "message": "历史记录已清空。"
+  },
+  "statusHistoryExported": {
+    "message": "历史记录已导出为 JSON。"
+  },
+  "statusEnterTextBeforeGenerating": {
+    "message": "请先输入文本或 URL 再生成。"
+  },
+  "statusQrGenerated": {
+    "message": "二维码已生成，现在可以下载。"
+  },
+  "statusNoGeneratedQr": {
+    "message": "没有可下载的已生成二维码。"
+  },
+  "statusGeneratedQrDownloaded": {
+    "message": "已下载生成的二维码。"
+  },
+  "statusOpenedGeneratedQrManualSave": {
+    "message": "已在新标签页中打开生成的二维码，便于手动保存。"
+  },
+  "cameraPageTitle": {
+    "message": "摄像头扫描器"
+  },
+  "cameraPageSubtitle": {
+    "message": "在独立扩展页面中运行，以获得更稳定的摄像头权限访问。"
+  },
+  "cameraPageLatestResultTitle": {
+    "message": "最新结果"
+  },
+  "cameraPageLatestResultEmpty": {
+    "message": "尚未检测到二维码。"
+  },
+  "cameraPageHistoryHint": {
+    "message": "识别到的内容会自动保存到面板历史记录中。"
+  },
+  "cameraPageStop": {
+    "message": "停止摄像头"
+  },
+  "moreExtensionsLabel": {
+    "message": "更多扩展"
+  }
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="extName">QR Sweep Pro</title>
+    <link rel="stylesheet" href="src/panel.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1 data-i18n="extName">QR Sweep Pro</h1>
+        <p data-i18n="heroSubtitle">Scan from image, camera, or extract all QR codes on this page.</p>
+      </header>
+
+      <section class="appearance" aria-label="Appearance settings">
+        <div class="title-row">
+          <h2 data-i18n="settingsTitle">Appearance</h2>
+        </div>
+        <div class="appearance-grid">
+          <label class="appearance-field" for="darkmode-select">
+            <span data-i18n="settingsDarkModeLabel">Dark Mode</span>
+            <select id="darkmode-select">
+              <option value="light" data-i18n="darkModeLight">Light</option>
+              <option value="dark" data-i18n="darkModeDark">Dark</option>
+              <option value="auto" data-i18n="darkModeAuto">Auto</option>
+            </select>
+          </label>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="scan-image" data-i18n="scanImage">Scan Image</button>
+        <button id="scan-camera" data-i18n="scanCamera">Start Camera</button>
+        <button id="scan-page" class="accent" data-i18n="scanPage">Sweep Page</button>
+        <button id="stop-camera" class="ghost" data-i18n="stopCamera" disabled>Stop Camera</button>
+      </section>
+
+      <section class="controls secondary">
+        <button id="clear-history" class="ghost" data-i18n="clearHistory">Clear History</button>
+        <button id="export-history" class="ghost" data-i18n="exportHistory">Export JSON</button>
+      </section>
+
+      <section class="preview">
+        <video id="camera" class="hidden" playsinline muted></video>
+        <img id="image" class="image hidden" data-i18n-alt="selectedImagePreviewAlt" alt="Selected image preview" />
+        <p id="status" data-i18n="statusReady">Ready. Pick an input to start scanning.</p>
+      </section>
+
+      <section class="maker">
+        <div class="title-row maker-title">
+          <h2 data-i18n="makeQrTitle">Make QR</h2>
+          <span data-i18n="makeQrSubtitle">Online Builder</span>
+        </div>
+        <textarea
+          id="make-input"
+          rows="3"
+          data-i18n-placeholder="makeInputPlaceholder"
+          placeholder="Enter text or URL to generate QR"
+        ></textarea>
+        <div class="maker-controls">
+          <select id="make-size">
+            <option value="200">200x200</option>
+            <option value="300" selected>300x300</option>
+            <option value="400">400x400</option>
+            <option value="600">600x600</option>
+          </select>
+          <button id="make-generate" class="accent" data-i18n="makeGenerate">Generate</button>
+          <button id="make-download" data-i18n="makeDownload" disabled>Download PNG</button>
+        </div>
+        <div id="make-preview-wrap" class="make-preview-wrap hidden">
+          <img id="make-preview" data-i18n-alt="generatedQrPreviewAlt" alt="Generated QR preview" />
+        </div>
+      </section>
+
+      <section>
+        <div class="title-row">
+          <h2 data-i18n="resultsTitle">Results</h2>
+          <span id="result-count">0</span>
+        </div>
+        <ul id="results"></ul>
+      </section>
+
+      <section class="related-links">
+        <a href="https://chrome-tool.github.io/" target="_blank" rel="noopener noreferrer" data-i18n="moreExtensionsLabel">
+          More Extensions
+        </a>
+      </section>
+    </main>
+
+    <template id="result-template">
+      <li class="result-item">
+        <div class="meta"></div>
+        <a class="value" target="_blank" rel="noopener"></a>
+        <div class="actions">
+          <button data-action="copy" data-i18n="copyAction">Copy</button>
+          <button data-action="open" data-i18n="openAction">Open</button>
+        </div>
+      </li>
+    </template>
+
+    <script type="module" src="src/panel.js"></script>
+  </body>
+</html>
